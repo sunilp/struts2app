@@ -12,7 +12,7 @@
       <result>/example/HelloWorld.jsp</result>
     </action>
 
-    <action name="Login_*" method="{1}" class="login">
+    <action name="Login_*" method="{1}" class="loginClass">
       <result name="input">/example/Login.jsp</result>
       <result type="redirectAction">Menu</result>
     </action>
