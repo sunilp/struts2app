@@ -9,7 +9,7 @@ import com.sunil.app.service.SampleService;
 
 public class SampleGridAction extends ActionSupport {
 	
-	private SampleCommand command;
+	private SampleCommand command = new SampleCommand();
 	private SampleService service;
 	/**
      * The action execution was successful. Show result
@@ -30,7 +30,7 @@ public class SampleGridAction extends ActionSupport {
 		System.out.println("in execute");
 		List<Employee> employeeList = service.selectAll();
 		System.out.println("list:"+employeeList);
-		getModel().setEmployees(employeeList);
+		command.setEmployees(employeeList);
 		System.out.println(getModel());
 		return SUCCESS;
 		

@@ -17,14 +17,14 @@
 
 <body>
 	
-	emp1:${command }
+	emp1:${model }
 		<table>
 		
-<s:iterator value="command.employees" var="employee">
+<s:iterator value="model.employees" var="employee">
 
 				<tr>
-					<td>id:${employee.id }</td>
-					<td>name:${employee.name }</td>
+					<td>${employee.id }</td>
+					<td>${employee.name }</td>
 				</tr>
 
 
