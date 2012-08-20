@@ -24,4 +24,14 @@
     <!-- Add additional "example" package actions here. -->
     
   </package>
+  
+<package name="sampleGridPkg" namespace="/" extends="struts-default">
+    <action name="SampleGrid_*" method="{1}" class="sampleGridAction">
+      <result name="success">/jsp/SampleGrid.jsp</result>
+    </action>
+
+
+    
+  </package>
+  
 </struts>

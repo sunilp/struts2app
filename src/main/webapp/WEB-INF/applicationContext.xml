@@ -11,7 +11,7 @@
         <constructor-arg value="${DATABASE_URL}" />
     </bean>
     <bean class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" id="dataSource">
-        <property name="driverClassName" value="@{database.driverClassName}"/>
+        <property name="driverClassName" value="org.postgresql.Driver"/>
         <property name="url" value="#{ 'jdbc:postgresql://' + @dbUrl.getHost() + @dbUrl.getPath() }"/>
         <property name="username" value="#{ @dbUrl.getUserInfo().split(':')[0] }"/>
         <property name="password" value="#{ @dbUrl.getUserInfo().split(':')[1] }"/>
@@ -36,6 +36,10 @@
  
 <bean id="sampleService" class="com.sunil.app.service.SampleServiceImpl">
 <property name="sampleDao" ref="sampleDao"/>
+</bean>
+
+<bean id="sampleGridAction" class="com.sunil.app.action.SampleGridAction">
+<property name="service" ref="sampleService" />
 </bean>
  
 </beans>
