@@ -38,7 +38,12 @@
 <property name="sampleDao" ref="sampleDao"/>
 </bean>
 
-<bean id="sampleGridAction" class="com.sunil.app.action.SampleGridAction">
+<bean id="sampleAction" class="com.sunil.app.action.SampleAction">
+<property name="service" ref="sampleService" />
+</bean>
+ 
+ 
+ <bean id="sampleGridAction" class="com.sunil.app.action.SampleGridAction">
 <property name="service" ref="sampleService" />
 </bean>
  

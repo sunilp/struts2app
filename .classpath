@@ -39,6 +39,20 @@
   <classpathentry kind="var" path="M2_REPO/org/springframework/spring-tx/3.1.0.RELEASE/spring-tx-3.1.0.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-tx/3.1.0.RELEASE/spring-tx-3.1.0.RELEASE-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/struts/struts2-spring-plugin/2.3.4/struts2-spring-plugin-2.3.4.jar" sourcepath="M2_REPO/org/apache/struts/struts2-spring-plugin/2.3.4/struts2-spring-plugin-2.3.4-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/spring-web/3.0.5.RELEASE/spring-web-3.0.5.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-web/3.0.5.RELEASE/spring-web-3.0.5.RELEASE-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/struts/struts2-convention-plugin/2.3.4/struts2-convention-plugin-2.3.4.jar" sourcepath="M2_REPO/org/apache/struts/struts2-convention-plugin/2.3.4/struts2-convention-plugin-2.3.4-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar" sourcepath="M2_REPO/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar" sourcepath="M2_REPO/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/jstl/jstl/1.2/jstl-1.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/postgresql/postgresql/9.1-901.jdbc4/postgresql-9.1-901.jdbc4.jar" sourcepath="M2_REPO/postgresql/postgresql/9.1-901.jdbc4/postgresql-9.1-901.jdbc4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/jgeppert/struts2/jquery/struts2-jquery-plugin/3.3.3/struts2-jquery-plugin-3.3.3.jar" sourcepath="M2_REPO/com/jgeppert/struts2/jquery/struts2-jquery-plugin/3.3.3/struts2-jquery-plugin-3.3.3-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/velocity/velocity/1.5/velocity-1.5.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-collections/commons-collections/3.1/commons-collections-3.1.jar" sourcepath="M2_REPO/commons-collections/commons-collections/3.1/commons-collections-3.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/sunilprakash/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-lang/commons-lang/2.1/commons-lang-2.1.jar" sourcepath="M2_REPO/commons-lang/commons-lang/2.1/commons-lang-2.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/oro/oro/2.0.8/oro-2.0.8.jar" sourcepath="M2_REPO/oro/oro/2.0.8/oro-2.0.8-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/jgeppert/struts2/jquery/struts2-jquery-grid-plugin/3.3.3/struts2-jquery-grid-plugin-3.3.3.jar" sourcepath="M2_REPO/com/jgeppert/struts2/jquery/struts2-jquery-grid-plugin/3.3.3/struts2-jquery-grid-plugin-3.3.3-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/struts/struts2-json-plugin/2.3.4/struts2-json-plugin-2.3.4.jar" sourcepath="M2_REPO/org/apache/struts/struts2-json-plugin/2.3.4/struts2-json-plugin-2.3.4-sources.jar"/>
 </classpath>

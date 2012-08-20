@@ -25,8 +25,14 @@
     
   </package>
   
-<package name="sampleGridPkg" namespace="/" extends="struts-default">
-    <action name="SampleGrid_*" method="{1}" class="sampleGridAction">
+<package name="samplePkg" namespace="/" extends="struts-default,json-default">
+
+<result-types>
+            <result-type name="json" class="org.apache.struts2.json.JSONResult" />
+        </result-types>
+
+
+    <action name="Sample_*" method="{1}" class="sampleAction">
       <result name="success">/jsp/SampleGrid.jsp</result>
     </action>
 
