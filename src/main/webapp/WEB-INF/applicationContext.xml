@@ -25,4 +25,17 @@
     </bean>
 
  
+ <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" >
+  <constructor-arg ref="dataSource" />
+ </bean>
+
+ 
+ <bean id="sampleDao" class="com.sunil.app.dao.SampleDaoImpl">
+ <property name="jdbcTemplate" ref="jdbcTemplate" />
+ </bean>
+ 
+<bean id="sampleService" class="com.sunil.app.service.SampleServiceImpl">
+<property name="sampleDao" ref="sampleDao"/>
+</bean>
+ 
 </beans>
