@@ -7,7 +7,7 @@
   - of how to break up the configuration file into multiple files.
 -->
 <struts>
-  <package name="example" namespace="/example" extends="struts-default">
+  <package name="default" namespace="/example" extends="struts-default">
     <action name="HelloWorld" class="com.sunil.example.HelloWorld">
       <result>/example/HelloWorld.jsp</result>
     </action>
@@ -25,18 +25,17 @@
     
   </package>
   
-<package name="samplePkg" namespace="/" extends="struts-default,json-default">
+<package name="samplePkg" namespace="/main" extends="struts-default,json-default">
 
 <result-types>
             <result-type name="json" class="org.apache.struts2.json.JSONResult" />
         </result-types>
 
 
-    <action name="Sample_*" method="{1}" class="sampleAction">
+
+<action name="Sample_*" method="{1}" class="sampleAction">
       <result name="success">/jsp/SampleGrid.jsp</result>
     </action>
-
-
     
   </package>
   

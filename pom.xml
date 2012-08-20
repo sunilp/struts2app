@@ -141,7 +141,11 @@
     <version>2.3.4</version>
 </dependency>
 
-          
+          <dependency>
+    <groupId>displaytag</groupId>
+    <artifactId>displaytag</artifactId>
+    <version>1.2</version>
+</dependency>
             
 
     </dependencies>

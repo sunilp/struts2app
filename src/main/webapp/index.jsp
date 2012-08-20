@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<%@ page contentType="text/html; charset=UTF-8" %>
 <html>
 <head>
     <META HTTP-EQUIV="Refresh" CONTENT="0;URL=example/HelloWorld.action">
@@ -6,5 +6,6 @@
 
 <body>
 <p>Loading ...</p>
+
 </body>
 </html>

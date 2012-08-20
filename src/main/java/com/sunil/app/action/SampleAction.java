@@ -30,6 +30,11 @@ public class SampleAction extends ActionSupport{
 	public void setService(SampleService service) {
 		this.service = service;
 	}
+	
+	public List<Employee> getModelList() throws Exception{
+		execute();
+		return command.getEmployees();
+	}
 
 
 }
