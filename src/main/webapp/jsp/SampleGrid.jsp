@@ -14,7 +14,13 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
-		//
+		   $(".slidingDiv").hide();
+	        $(".show_hide").show();
+	 
+	    $('.show_hide').click(function(){
+	    $(".slidingDiv").slideToggle();
+	    });
+
 	});
 </script>
 
@@ -66,9 +72,30 @@ background-image: -webkit-gradient(
 	color-stop(1, #2DD641),
 	color-stop(1, #74D69E)
 );
-
-
+-moz-border-radius: 5px;
+border-radius: 5px;
+-moz-box-shadow: 5px 5px 5px green;
+-webkit-box-shadow: 5px 5px 5px green;
+box-shadow: 5px 5px 5px green;
 }
+
+.slidingDiv {
+    height:200px;
+    background-color: #99CCFF;
+    padding:20px;
+    margin-top:10px;
+    border-bottom:5px solid #3399FF;
+    width: 400px;
+    moz-box-shadow: 0 0 5px 5px #888;
+-webkit-box-shadow: 0 0 5px 5px#888;
+box-shadow: 0 0 5px 5px #888;
+}
+ 
+.show_hide {
+    display:none;
+}
+
+
 </style>
 </head>
 
@@ -102,6 +129,22 @@ background-image: -webkit-gradient(
        
     </sjg:grid>		
 </div>		
+
+
+<div class="header">Expanding Content</div>
+<div class="container">
+	
+<a href="#" class="show_hide">Show/hide</a>
+<div class="slidingDiv">
+	 <display:table id="employeeList" name="modelList" requestURI="Sample" pagesize="10" defaultsort="1"  >
+        <display:column property="id" title="ID" sortable="true" headerClass="sortable" />
+        <display:column property="name" title="Name" sortable="true" headerClass="sortable"/>
+     
+     </display:table>
+ <a href="#" class="show_hide">hide</a></div>
+	
+</div>
+	
 		
 <s:form action="Sample">
 		<s:submit cssClass="header" />
